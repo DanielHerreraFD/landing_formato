@@ -1,0 +1,58 @@
+.sticky-navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+html {
+    scroll-behavior: smooth;
+  }
+header {
+    background-image: url('../img/foto_header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+nav {
+    transition: top 0.3s;
+  }
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+form {
+    width: 100%;
+    max-width: 1090px;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+#carru {
+    display: flex;
+    width: 1080px;
+    height: 430px;
+
+}
+#carruimg{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: width .5s ease;
+  }
+
+#carruimg:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
